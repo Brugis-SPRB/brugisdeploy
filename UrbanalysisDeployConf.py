@@ -9,10 +9,10 @@ geoserverServiceName        = MDC.geoserverServiceName
 
 tomcatServerFilePath        = MDC.tomcatServerFilePath
 
-ftpRepositoryDirectoryPath  = rootDiskLetter + "\FTP_Root\mybrugis_transfer\\"
-warDirectoryPath            = tomcatServerFilePath + "\webapps\\"
-backupDirectoryPath         = rootDiskLetter + "\MyBruGIS_backups\\"
-docxTemplateDirectoryPath   = rootDiskLetter + "\DocxTemplate\\"
+ftpRepositoryDirectoryPath  = rootDiskLetter + "/srv/ftp_root"
+warDirectoryPath            = tomcatServerFilePath + "/webapps"
+backupDirectoryPath         = rootDiskLetter + "/srv/MyBruGIS_backups"
+docxTemplateDirectoryPath   = rootDiskLetter + "/srv/reperage/DocxTemplate"
 
 webRepWarName                     = "WebReperage.war"
 templateTarName                   = "UrbanalysisTemplates.tar"

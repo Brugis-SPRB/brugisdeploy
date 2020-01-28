@@ -41,7 +41,7 @@ with open(os.path.join(LOCALDIRN, LOGFILE),'w') as logFile:
         # si oui,
         SENDMAIL = True
         # on stoppe tomcat
-        tomcatStopped = UDL.stopWinService(UDC.geoserverServiceName)
+        tomcatStopped = UDL.stopService(UDC.geoserverServiceName)
         if tomcatStopped:
             printAndLog("*** Service %s stopped. Deploying..." % UDC.geoserverServiceName, logFile)
             # on jette le dossier webreperage dans tomcat/webapp
@@ -49,7 +49,7 @@ with open(os.path.join(LOCALDIRN, LOGFILE),'w') as logFile:
             # on backupe le war actuellement dans tomcat
             UDL.deployFile(UDC.ftpRepositoryDirectoryPath, UDC.webRepWarName, UDC.webRepWarName, UDC.warDirectoryPath, UDC.backupDirectoryPath)
             # on redémarre tomcat
-            tomcatStarted = UDL.startWinService(UDC.geoserverServiceName)
+            tomcatStarted = UDL.startService(UDC.geoserverServiceName)
         else:
             printAndLog("*** Impossible to stop service %s, no deploy done" % UDC.geoserverServiceName, logFile)
     else:
