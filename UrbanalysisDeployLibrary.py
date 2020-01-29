@@ -4,8 +4,8 @@
 import MyBruGISDeployLibrary as MDL
 
 ################################################################################
-stopWinService  = MDL.stopWinService
-startWinService = MDL.startWinService
+stopService  = MDL.stopService
+startService = MDL.startService
 deployFile      = MDL.deployFile
 untarDocxTemplate = MDL.untarData_dir
 deployDocxTemplate = MDL.deployData_dir
